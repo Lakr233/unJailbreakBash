@@ -1,2 +1,2 @@
 # unJailbreakXiaoLian
-a script to unjailbreak, update from Electra
+a script to unjailbreak, update from delectra
