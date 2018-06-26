@@ -61,7 +61,7 @@ rm -f  /Library/LaunchDaemons/com.openssh.sshd.plist
 rm -f  /Library/LaunchDaemons/com.saurik.Cydia.Startup.plist
 rm -f  /Library/LaunchDaemons/com.rpetrich.rocketbootstrapd.plist
 rm -f  /Library/LaunchDaemons/xiaolian.plist
-
+rm -f  /.installed_xiaolian
 
 # removeElectraBeta
 echo "Removing electra beta files.."
