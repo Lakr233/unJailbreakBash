@@ -9,6 +9,9 @@ echo "This has ONLY been tested on a few devices and might kill your JB."
 echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete."
 read -p "Press enter to continue. Press Ctrl + C to exit"
 
+# (Meg) removing the stashing.
+rm -rf /.cydia_no_stash
+
 echo "Killing Cydia.."
 killall Cydia
 
