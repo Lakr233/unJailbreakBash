@@ -7,10 +7,9 @@ echo "XiaoLian uninstaller by Lakr Sakura for 11.2.x"
 echo "Electra uninstaller by KirovAir for Electra 1.0.x"
 echo "This has ONLY been tested on a few devices and might kill your JB."
 echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete."
+echo "Exit now if you don't know what you're doing.请立即 Ctrl + C 退出本脚本除非你清楚你在做什么"
+echo "请确认你没有对文件系统进行直接的修改。你将承担本次运行的风险。回车继续"
 read -p "Press enter to continue. Press Ctrl + C to exit"
-
-# (Meg) removing the stashing.
-rm -rf /.cydia_no_stash
 
 echo "Killing Cydia.."
 killall Cydia
@@ -64,6 +63,11 @@ rm -f  /Library/LaunchDaemons/com.openssh.sshd.plist
 rm -f  /Library/LaunchDaemons/com.saurik.Cydia.Startup.plist
 rm -f  /Library/LaunchDaemons/com.rpetrich.rocketbootstrapd.plist
 rm -f  /Library/LaunchDaemons/xiaolian.plist
+
+# (Meg) removing the stashing.
+# 如果你还找到了其他根目录下.开头可以删除的文件 欢迎pr
+echo "Removing xiaolian jailbreaked sign files.."
+rm -rf /.cydia_no_stash
 rm -f  /.installed_xiaolian
 
 # removeElectraBeta
@@ -517,5 +521,8 @@ rm -f /bin/sh
 rm -f /bin/rm
 
 echo "All jailbreak related files are removed! (At least all included in the iOS 11 electra JB And XiaoLian)"
+echo "回车键重启"
+read -p "Press enter to Reboot. Press Ctrl + C to exit"
+
 echo "Rebooting... (Keep praying my friend!)"
 kill 1
