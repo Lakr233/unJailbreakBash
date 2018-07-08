@@ -19,6 +19,22 @@ echo "Removing exploit generated.."
 rm -f /var/mobile/test.txt
 rm -f /.bit_of_fun
 
+
+# rootlessJB gemerated
+rm -rf /var/LIB
+rm -rf /var/ulb
+rm -rf /var/bin
+rm -rf /var/sbin
+rm -rf /var/progile
+rm -rf /var/motd
+rm -rf /var/dropbear
+rm -rf /var/containers/Bundle/tweaksupport
+rm -rf /var/containers/Bundle/iosbinpack64
+rm -rf /var/containers/Bundle/dylibs
+rm -rf /var/log/testbin.log
+rm -rf /var/log/jailbreakd-stdout.log
+rm -rf /var/log/jailbreakd-stderr.log
+
 # cleanupPotentialManualFiles
 echo "Removing potential manual files.."
 rm -f /bin/bash
