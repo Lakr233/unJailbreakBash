@@ -25,7 +25,7 @@ rm -rf /var/LIB
 rm -rf /var/ulb
 rm -rf /var/bin
 rm -rf /var/sbin
-rm -rf /var/progile
+rm -rf /var/profile
 rm -rf /var/motd
 rm -rf /var/dropbear
 rm -rf /var/containers/Bundle/tweaksupport
