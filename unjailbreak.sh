@@ -18,7 +18,7 @@ killall Cydia
 echo "Removing exploit generated.."
 rm -f /var/mobile/test.txt
 rm -f /.bit_of_fun
-
+rm -f /RWTEST
 
 # rootlessJB gemerated
 rm -rf /var/LIB
